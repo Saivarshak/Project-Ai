@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Arch AI</title>
+    <title>Architecture Ai</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
@@ -23,11 +23,14 @@
       rel="stylesheet"
     />
     <link
-      rel="shortcut icon"
-      href="images/resource/logo-1.png"
+    rel="shortcut icon"
       type="image/x-icon"
+      href="images/resource/logo-1.png" style="object-fit: contain;
+                    filter: invert(1) brightness(2) contrast(1.1);"
+      
     />
-    <link rel="icon" href="images/resource/logo-1.png" type="image/x-icon" />
+    <link rel="icon" href="images/resource/logo-1.png" type="image/x-icon" style="object-fit: contain;
+                    filter: invert(1) brightness(2) contrast(1.1);" />
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -99,54 +102,17 @@
                     class="navbar-collapse collapse clearfix"
                     id="navbarSupportedContent"
                   >
-                    <ul class="navigation clearfix">
-                      <li class="dropdown">
-                        <a href="#">Home</a>
-                        <ul>
-                          <li>
-                            <a href="index.html">Home 01 (AI Products)</a>
-                          </li>
-                          <li>
-                            <a href="index-2.html">Home 02 (Content Writing)</a>
-                          </li>
-                          <li><a href="index-3.html">Home 03 (AI Image)</a></li>
-                          <li class="dropdown">
-                            <a href="#">Header Styles</a>
-                            <ul>
-                              <li><a href="index.html">Header Style One</a></li>
-                              <li>
-                                <a href="index-2.html">Header Style Two</a>
-                              </li>
-                              <li>
-                                <a href="index-3.html">Header Style Three</a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
+                    <ul class="navigation clearfix m-3">
+                      <a href="index.html" class="m-5">Home</a>
+
                       <li><a href="about.html">About</a></li>
-                      <li class="dropdown">
-                        <a href="#">Pages</a>
-                        <ul>
-                          <li><a href="career.html">Career</a></li>
-                          <li>
-                            <a href="career-details.html">Career Details</a>
-                          </li>
-                          <li><a href="login.html">Login</a></li>
-                          <li>
-                            <a href="create-account.html">Create Account</a>
-                          </li>
-                          <li>
-                            <a href="reset-password.html">Reset Password</a>
-                          </li>
-                          <li><a href="404.html">404 Error</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#">Blog</a>
+
+                      <a href="career.html" class="m-2">Pages</a>
+
+                      <li class="dropdown m-4">
+                        <a href="blog.html">Blog</a>
                         <ul>
                           <li><a href="blog.html">Blog</a></li>
-                          <li><a href="blog-details.html">Blog Detail</a></li>
                         </ul>
                       </li>
                       <li><a href="contact.html">Contact</a></li>
@@ -232,15 +198,11 @@
         <div class="container">
           <div class="feature-one__inner">
             <h2 class="feature-one__title">
-              Explore the Possibilities of <br />
-              AI 🤖 with <span>Arch AI</span>
+              Transform your  ideas into stunning <br> AI-generated visuals instantly <br />
+               with <span>"Architecture Ai"</span>
             </h2>
-            <div class="feature-one__btn-box">
-              <a href="contact.html" class="thm-btn feature-one__btn">
-                <i class="fal fa-plus"></i> Get Started Free</a
-              >
-            </div>
-            <div class="feature-one__main-content-box">
+
+            <div class="feature-one__main-content-box mt-8">
               <div class="feature-one__color-overly-1 flaot-bob-y"></div>
               <div class="feature-one__color-overly-2 flaot-bob-x"></div>
               <div class="feature-one__color-overly-3 img-bounce"></div>
@@ -295,9 +257,6 @@
                   <img src="images/shapes/feature-one-star-7.png" alt="" />
                 </div>
 
-                <div class="feature-one__ai-pack">
-                  <h3>AI Pack</h3>
-                </div>
                 <ul class="feature-one__list">
                   <li>
                     <div class="feature-one__single">
@@ -313,8 +272,42 @@
                     </div>
                   </li>
                   <li>
-                    <div class="feature-one__cpu-icon-box">
-                      <img src="images/resource/logo-1.png" alt="" />
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                        text-align: center;
+                        margin-top: 50px;
+                      "
+                    >
+                      <img
+                        src="images/resource/logo-1.png"
+                        alt="Logo"
+                        style="
+                          max-width: 120px;
+                          height: auto;
+                          object-fit: contain;
+                          filter: invert(1) brightness(2) contrast(1.1);
+                        "
+                      />
+
+                      <a
+                        href="login.html"
+                        class="thm-btn feature-one__btn feature-one__btn-box"
+                        style="
+                          padding: 10px 20px;
+                          text-decoration: none;
+                          background-color: #007bff;
+                          color: white;
+                          border-radius: 6px;
+                          font-weight: 500;
+                          transition: background-color 0.3s;
+                        "
+                      >
+                        Get Started Free
+                      </a>
                     </div>
                   </li>
                   <li>
@@ -329,82 +322,6 @@
                   </li>
                 </ul>
               </div>
-              <div class="feature-one__main-content-bottom">
-                <div class="feature-one__start-4 zoominout">
-                  <img src="images/shapes/feature-one-star-4.png" alt="" />
-                </div>
-                <div class="feature-one__start-8 float-bob-x">
-                  <img src="images/shapes/feature-one-star-8.png" alt="" />
-                </div>
-                <ul class="feature-one__list">
-                  <li>
-                    <div class="feature-one__single">
-                      <div class="feature-one__icon">
-                        <img src="images/icons/ai-audio.png" alt="" />
-                      </div>
-                      <h5 class="feature-one__title-2">
-                        <a href="about.html"
-                          >Generate <br />
-                          Text to Audio</a
-                        >
-                      </h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="feature-one__single">
-                      <div class="feature-one__icon">
-                        <img src="images/icons/ai-speech.png" alt="" />
-                      </div>
-                      <h5 class="feature-one__title-2">
-                        <a href="about.html"
-                          >Speech to <br />
-                          Text</a
-                        >
-                      </h5>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="feature-one__rating-box">
-              <ul class="feature-one__rating">
-                <li>
-                  <div class="feature-one__rating-icon">
-                    <img src="images/icons/rateing.png" alt="" />
-                  </div>
-                  <div class="feature-one__rating-star-and-text">
-                    <div class="feature-one__rating-star">
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                    </div>
-                    <p class="feature-one__rating-text">
-                      Rated 4.8 . 1,000+ Reviews
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="feature-one__rating-icon">
-                    <img src="images/icons/send.png" alt="" />
-                  </div>
-                  <div
-                    class="feature-one__rating-star-and-text feature-one__rating-star-and-text--two"
-                  >
-                    <div class="feature-one__rating-star">
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                    </div>
-                    <p class="feature-one__rating-text">
-                      Rated 4.8 . 1,000+ Reviews
-                    </p>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -416,144 +333,46 @@
         <div class="container">
           <div class="section-title text-center">
             <div class="section-title__tagline-box">
-              <span class="section-title__tagline">All AI Platform</span>
+              <span class="section-title__tagline">Architecture Ai</span>
             </div>
             <h2 class="section-title__title">
-              All Possible Generative AI Solutions <br />
-              at One Place
+              One Platform <br> Endless Generative AI Possibilities
             </h2>
           </div>
-          <div
-            class="solutions-one__carousel owl-carousel owl-theme thm-owl__carousel"
-            data-owl-options='{
-					"loop": true,
-					"autoplay": true,
-					"margin": 24,
-					"nav": false,
-					"dots": false,
-					"smartSpeed": 500,
-					"autoplayTimeout": 10000,
-					"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-					"responsive": {
-						"0": {
-							"items": 1
-						},
-						"768": {
-							"items": 2
-						},
-						"992": {
-							"items": 3
-						},
-						"1350": {
-							"items": 4
-						}
-					}
-				}'
-          >
-            <div class="item">
-              <div class="solutions-one__single">
-                <div class="solutions-one__icon">
-                  <img src="images/icons/ai-speech.png" alt="" />
-                </div>
-                <h4 class="solutions-one__title">
-                  <a href="about.html">Speech To Text</a>
-                </h4>
-                <p class="solutions-one__text">
-                  Mastering the Art of AI Content Writing: Unleashing the Power
-                  of Automated Creativity"
-                </p>
-                <a href="about.html" class="solutions-one__btn"
-                  >Explore More <i class="fas fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="solutions-one__single">
-                <div class="solutions-one__icon">
-                  <img src="images/icons/ai-content-writing.png" alt="" />
-                </div>
-                <h4 class="solutions-one__title">
-                  <a href="about.html">AI Writing Tools</a>
-                </h4>
-                <p class="solutions-one__text">
-                  Mastering the Art of AI Content Writing: Unleashing the Power
-                  of Automated Creativity"
-                </p>
-                <a href="about.html" class="solutions-one__btn"
-                  >Explore More <i class="fas fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="solutions-one__single">
-                <div class="solutions-one__icon">
-                  <img src="images/icons/ai-chat.png" alt="" />
-                </div>
-                <h4 class="solutions-one__title">
-                  <a href="about.html">AI Chat Bot</a>
-                </h4>
-                <p class="solutions-one__text">
-                  Mastering the Art of AI Content Writing: Unleashing the Power
-                  of Automated Creativity"
-                </p>
-                <a href="about.html" class="solutions-one__btn"
-                  >Explore More <i class="fas fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="solutions-one__single">
-                <div class="solutions-one__icon">
-                  <img src="images/icons/ai-image.png" alt="" />
-                </div>
-                <h4 class="solutions-one__title">
-                  <a href="about.html">AI Image Generator</a>
-                </h4>
-                <p class="solutions-one__text">
-                  Mastering the Art of AI Content Writing: Unleashing the Power
-                  of Automated Creativity"
-                </p>
-                <a href="about.html" class="solutions-one__btn"
-                  >Explore More <i class="fas fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="solutions-one__single">
-                <div class="solutions-one__icon">
-                  <img src="images/icons/ai-audio.png" alt="" />
-                </div>
-                <h4 class="solutions-one__title">
-                  <a href="about.html">Text To Audio</a>
-                </h4>
-                <p class="solutions-one__text">
-                  Mastering the Art of AI Content Writing: Unleashing the Power
-                  of Automated Creativity"
-                </p>
-                <a href="about.html" class="solutions-one__btn"
-                  >Explore More <i class="fas fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="solutions-one__single">
-                <div class="solutions-one__icon">
-                  <img src="images/icons/ai-code.png" alt="" />
-                </div>
-                <h4 class="solutions-one__title">
-                  <a href="about.html">AI Code Generator</a>
-                </h4>
-                <p class="solutions-one__text">
-                  Mastering the Art of AI Content Writing: Unleashing the Power
-                  of Automated Creativity"
-                </p>
-                <a href="about.html" class="solutions-one__btn"
-                  >Explore More <i class="fas fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div style="display: flex; justify-content: center; align-items: center; gap: 24px; flex-wrap: wrap; padding: 40px 0;">
+  
+  <div style="background: rgba(244, 241, 241, 0.1); border-radius: 10px; box-shadow: 0 0 10px #242222ff; text-align: center; padding: 20px; width: 300px;">
+    <div>
+      <img src="images/icons/ai-audio.png" alt="AI Audio" style="width: 80px; height: auto; margin-bottom: 10px;">
+    </div>
+    <h4 style="margin: 10px 0; font-size: 20px;">
+      <a href="about.html" style="text-decoration: none; color: #ffffffff;">Text To Audio</a>
+    </h4>
+    <p style="font-size: 14px; color: #555;">
+      Mastering the Art of AI Content Writing: Unleashing the Power of Automated Creativity
+    </p>
+    <a href="about.html" style="display: inline-block; margin-top: 10px; padding: 8px 16px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">
+      Explore More <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+
+  <div style="background: rgba(255, 255, 255, 0.1); border-radius: 10px; box-shadow: 0 0 10px #242222ff; text-align: center; padding: 20px; width: 300px;">
+    <div>
+      <img src="images/icons/ai-code.png" alt="AI Code" style="width: 80px; height: auto; margin-bottom: 10px;">
+    </div>
+    <h4 style="margin: 10px 0; font-size: 20px;">
+      <a href="about.html" style="text-decoration: none; color: #ffffffff;">AI Code Generator</a>
+    </h4>
+    <p style="font-size: 14px; color: #555;">
+      Mastering the Art of AI Content Writing: Unleashing the Power of Automated Creativity
+    </p>
+    <a href="about.html" style="display: inline-block; margin-top: 10px; padding: 8px 16px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">
+      Explore More <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+
+</div>
+
       </section>
       <!-- Solutions One End -->
 
@@ -562,11 +381,10 @@
         <div class="container">
           <div class="section-title text-center">
             <div class="section-title__tagline-box">
-              <span class="section-title__tagline">Pur AI Solutions</span>
+              <span class="section-title__tagline">Architecture AI</span>
             </div>
             <h2 class="section-title__title">
-              Generative AI Designed for creators. Make <br />
-              your Life Easier with <span>Arch AI</span>
+              “Transform Ideas into <br> Reality with <span> Architecture AI </span>”
             </h2>
           </div>
           <div
@@ -656,85 +474,7 @@
               </div>
             </div>
           </div>
-          <div class="solutions-two__content-two">
-            <div class="row">
-              <!--Solutions Two Single Start-->
-              <div
-                class="col-xl-6 col-lg-6 wow fadeInLeft"
-                data-wow-delay="100ms"
-              >
-                <div class="solutions-two__content-two-single">
-                  <div class="solutions-two__content-two-top">
-                    <div class="solutions-two__content-two-title-box">
-                      <p>AI Chat Bot</p>
-                      <h3>With FlowAI, you can chat 🤖 smarter, not harder.</h3>
-                    </div>
-                    <p class="solutions-two__content-two-text-1">
-                      Mastering the Art of AI Content Writing: Unleashing the
-                      Power of Automated Creativity"
-                    </p>
-                    <div class="solutions-two__content-two-btn">
-                      <a href="contact.html"
-                        >Start Chat<span class="icon-up-right-arrow"></span
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="solutions-two__content-two-img-box">
-                    <div class="solutions-two__content-two-shape-1">
-                      <img
-                        src="images/shapes/solutions-two-content-two-shape-1.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="solutions-two__content-two-img">
-                      <img
-                        src="images/resource/solutions-two-content-two-img-1.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Solutions Two Single End-->
-              <!--Solutions Two Single Start-->
-              <div
-                class="col-xl-6 col-lg-6 wow fadeInRight"
-                data-wow-delay="100ms"
-              >
-                <div
-                  class="solutions-two__content-two-single solutions-two__content-two-single-2"
-                >
-                  <div class="solutions-two__content-two-top">
-                    <div class="solutions-two__content-two-title-box">
-                      <p>AI Video Generator</p>
-                      <h3>
-                        A wonderful video may be created by anyone. That
-                        includes you.
-                      </h3>
-                    </div>
-                    <p class="solutions-two__content-two-text-1">
-                      By listening to our leading AI text to speech reader, you
-                      can breeze through papers, articles, PDFs, and emails.
-                    </p>
-                    <div class="solutions-two__content-two-btn">
-                      <a href="about.html"
-                        >Try AI Video<span class="icon-up-right-arrow"></span
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="solutions-two__content-two-img-box">
-                    <div class="solutions-two__content-two-img">
-                      <img
-                        src="images/resource/solutions-two-content-two-img-2.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Solutions Two Single End-->
-            </div>
-          </div>
+      
           <div
             class="solutions-two__content-three wow fadeInUp"
             data-wow-delay="100ms"
@@ -853,7 +593,7 @@
                     <h3>Generate Outstanding AI Images Just Using Prompt 🌄</h3>
                   </div>
                   <p class="solutions-two__content-three-text-1">
-                    <span>Arch AI</span> is an artificial art generator that
+                    <span>Architecture Ai</span> is an artificial art generator that
                     turns your ideas into one-of-a kind artwork and photographs
                     in seconds. Finally, you'll have the perfect image to go
                     with your statement.
@@ -941,7 +681,7 @@
       <!-- Solutions Two End -->
 
       <!-- Brand One Start -->
-      <section class="brand-one">
+    <!---  <section class="brand-one">
         <div class="container">
           <div class="brand-one__title-box">
             <div class="brand-one__shape-1 zoominout">
@@ -1031,7 +771,7 @@
       <!-- Brand One End -->
 
       <!-- Collaboration One Start -->
-      <section class="collaboration-one">
+     <!-- <section class="collaboration-one">
         <div class="container">
           <div class="collaboration-one__inner">
             <div class="collaboration-one__star-1 zoominout">
@@ -1062,7 +802,7 @@
               <p class="collaboration-one__sub-title">Integrations With</p>
               <h3 class="collaboration-one__title">
                 Streamlining Collaboration <br />
-                with Arch AI
+                with Architecture Ai
               </h3>
             </div>
             <div class="collaboration-one__icon-box">
@@ -1109,26 +849,24 @@
       </section>
       <!-- Collaboration One End -->
 
-      <!-- Testimonial One Start -->
+      <!-- Testimonial One Start 
       <section class="testimonial-one">
         <div class="testimonial-one__btn-box">
           <a href="about.html" class="thm-btn testimonial-one__btn"
-            >Show More</a
-          >
+            >Show More</a> -->
         </div>
-        <div class="container">
+     <!--   <div class="container">
           <div class="section-title text-center">
             <div class="section-title__tagline-box">
               <span class="section-title__tagline">Customer Stories</span>
             </div>
             <h2 class="section-title__title">
-              <span>Arch AI.</span> Received <i class="icon-star"></i> 4.8/5
+              <span>Architecture Ai.</span> Received <i class="icon-star"></i> 4.8/5
               Stars in <br />
               Over 10,000+ Reviews.
             </h2>
           </div>
           <div class="row">
-            <!--Testimonial One Single Start-->
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single">
                 <div class="testimonial-one__client-info">
@@ -1157,8 +895,7 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
-            <!--Testimonial One Single Start-->
+            
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single">
                 <div class="testimonial-one__client-info">
@@ -1187,8 +924,7 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
-            <!--Testimonial One Single Start-->
+            
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single">
                 <div class="testimonial-one__client-info">
@@ -1218,8 +954,7 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
-            <!--Testimonial One Single Start-->
+           
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single">
                 <div class="testimonial-one__client-info">
@@ -1249,8 +984,7 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
-            <!--Testimonial One Single Start-->
+            
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single testimonial-one__single-5">
                 <div class="testimonial-one__client-info">
@@ -1278,8 +1012,7 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
-            <!--Testimonial One Single Start-->
+           
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single testimonial-one__single-6">
                 <div class="testimonial-one__client-info">
@@ -1309,8 +1042,7 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
-            <!--Testimonial One Single Start-->
+            
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single testimonial-one__single-7">
                 <div class="testimonial-one__client-info">
@@ -1337,8 +1069,7 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
-            <!--Testimonial One Single Start-->
+           
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single testimonial-one__single-8">
                 <div class="testimonial-one__client-info">
@@ -1368,8 +1099,7 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
-            <!--Testimonial One Single Start-->
+           
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single testimonial-one__single-9">
                 <div class="testimonial-one__client-info">
@@ -1397,8 +1127,7 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
-            <!--Testimonial One Single Start-->
+         
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single testimonial-one__single-10">
                 <div class="testimonial-one__client-info">
@@ -1431,8 +1160,7 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
-            <!--Testimonial One Single Start-->
+           
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single testimonial-one__single-11">
                 <div class="testimonial-one__client-info">
@@ -1464,8 +1192,7 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
-            <!--Testimonial One Single Start-->
+           
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="testimonial-one__single testimonial-one__single-12">
                 <div class="testimonial-one__client-info">
@@ -1495,44 +1222,23 @@
                 </div>
               </div>
             </div>
-            <!--Testimonial One Single End-->
           </div>
         </div>
-      </section>
-      <!-- Testimonial One End -->
+      </section> -->
 
-      <!-- Pricing One Start -->
-      <section class="pricing-one">
+      <section class="pricing-one mt-5">
         <div class="pricing-one__shape-1 zoom-fade-2"></div>
         <div class="pricing-one__shape-2 img-bounce"></div>
         <div class="container">
           <div class="pricing-one__section-title text-center">
-            <h2 class="pricing-one__section-title__title">
+            <h2 class="pricing-one__section-title__title mb-5">
               Flexible Pricing Plans That Your Needs
             </h2>
           </div>
-          <div class="pricing-one__switch-toggle-title-box">
-            <ul
-              class="list-inline text-center switch-toggler-list"
-              role="tablist"
-              id="switch-toggle-tab"
-            >
-              <li class="month active"><a href="#">Pay Monthly</a></li>
-              <li>
-                <!-- Rounded switch -->
-                <label class="switch on">
-                  <span class="slider round"></span>
-                </label>
-              </li>
-              <li class="year"><a href="#">Pay Yearly</a></li>
-            </ul>
-            <!-- /.list-inline -->
-            <div class="pricing-one__discount">Save 20%</div>
-          </div>
+
           <div class="tabed-content">
             <div id="month">
               <div class="row">
-                <!--Pricing One Single Start-->
                 <div class="col-xl-4 col-lg-4 animated fadeInLeft">
                   <div class="pricing-one__single">
                     <div class="pricing-one__overly-color"></div>
@@ -1544,7 +1250,8 @@
                       >
                     </div>
                     <p class="pricing-one__text">
-                      *Billed monthly until cancelled
+                      *Build 20 creaditels free forever 
+                    
                     </p>
                     <ul class="list-unstyled pricing-one__points">
                       <li>
@@ -1556,7 +1263,7 @@
                       <li>
                         <div class="circle-box"></div>
                         <div class="text">
-                          <p>Generate 10+ AI images</p>
+                          <p>Generate 20+ AI images</p>
                         </div>
                       </li>
                       <li>
@@ -1592,8 +1299,7 @@
                     </ul>
                   </div>
                 </div>
-                <!--Pricing One Single End-->
-                <!--Pricing One Single Start-->
+                
                 <div class="col-xl-4 col-lg-4 animated fadeInLeft">
                   <div class="pricing-one__single">
                     <div class="pricing-one__overly-color"></div>
@@ -1606,7 +1312,9 @@
                       >
                     </div>
                     <p class="pricing-one__text">
-                      *Billed monthly until cancelled
+                      **Build 50 creaditels free forever
+
+
                     </p>
                     <ul class="list-unstyled pricing-one__points">
                       <li>
@@ -1618,7 +1326,7 @@
                       <li>
                         <div class="circle-box"></div>
                         <div class="text">
-                          <p>Generate 100+ AI images</p>
+                          <p>Generate 50+ AI images</p>
                         </div>
                       </li>
                       <li>
@@ -1654,8 +1362,7 @@
                     </ul>
                   </div>
                 </div>
-                <!--Pricing One Single End-->
-                <!--Pricing One Single Start-->
+
                 <div class="col-xl-4 col-lg-4 animated fadeInLeft">
                   <div class="pricing-one__single">
                     <div class="pricing-one__overly-color"></div>
@@ -1666,139 +1373,14 @@
                         >Start for Free</a
                       >
                     </div>
-                    <p class="pricing-one__text">*Billed $180 annually</p>
+                    <p class="pricing-one__text">**Build 100 creaditels free forever
+
+</p>
                     <ul class="list-unstyled pricing-one__points">
                       <li>
                         <div class="circle-box"></div>
                         <div class="text">
                           <p>30,000 words</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>Generate 500+ AI images</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>100+ Text To Speech</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>100+ AI Code Generator</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>Unlimiited AI-powered Chat</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>Unlimited Speech to Text</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>24/7 Support</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--Pricing One Single End-->
-              </div>
-            </div>
-            <div id="year">
-              <div class="row">
-                <!--Pricing One Single Start-->
-                <div class="col-xl-4 col-lg-4 animated fadeInLeft">
-                  <div class="pricing-one__single">
-                    <div class="pricing-one__overly-color"></div>
-                    <p class="pricing-one__tagline">Free</p>
-                    <h3 class="pricing-one__price">$00</h3>
-                    <div class="pricing-one__btn-box">
-                      <a href="contact.html" class="thm-btn pricing-one__btn"
-                        >Start for Free</a
-                      >
-                    </div>
-                    <p class="pricing-one__text">
-                      *Billed monthly until cancelled
-                    </p>
-                    <ul class="list-unstyled pricing-one__points">
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>1000 words/month</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>Generate 10+ AI images</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>15+ Text To Speech</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>20+ AI Code Generator</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>5+ AI-powered Chat</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>10+ Speech to Text</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>Basic Support</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--Pricing One Single End-->
-                <!--Pricing One Single Start-->
-                <div class="col-xl-4 col-lg-4 animated fadeInLeft">
-                  <div class="pricing-one__single">
-                    <div class="pricing-one__overly-color"></div>
-                    <p class="pricing-one__popular">Popular</p>
-                    <p class="pricing-one__tagline">Starter</p>
-                    <h3 class="pricing-one__price">$29</h3>
-                    <div class="pricing-one__btn-box">
-                      <a href="contact.html" class="thm-btn pricing-one__btn"
-                        >Start for Free</a
-                      >
-                    </div>
-                    <p class="pricing-one__text">
-                      *Billed monthly until cancelled
-                    </p>
-                    <ul class="list-unstyled pricing-one__points">
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>10,000 words</p>
                         </div>
                       </li>
                       <li>
@@ -1810,65 +1392,6 @@
                       <li>
                         <div class="circle-box"></div>
                         <div class="text">
-                          <p>50+ Text To Speech</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>50+ AI Code Generator</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>5+ AI-powered Chat</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>Unlimited Speech to Text</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>24/7 Support</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--Pricing One Single End-->
-                <!--Pricing One Single Start-->
-                <div class="col-xl-4 col-lg-4 animated fadeInLeft">
-                  <div class="pricing-one__single">
-                    <div class="pricing-one__overly-color"></div>
-                    <p class="pricing-one__tagline">Enterprise</p>
-                    <h3 class="pricing-one__price">$125</h3>
-                    <div class="pricing-one__btn-box">
-                      <a href="contact.html" class="thm-btn pricing-one__btn"
-                        >Start for Free</a
-                      >
-                    </div>
-                    <p class="pricing-one__text">*Billed $180 annually</p>
-                    <ul class="list-unstyled pricing-one__points">
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>30,000 words</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
-                          <p>Generate 500+ AI images</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="circle-box"></div>
-                        <div class="text">
                           <p>100+ Text To Speech</p>
                         </div>
                       </li>
@@ -1899,15 +1422,13 @@
                     </ul>
                   </div>
                 </div>
-                <!--Pricing One Single End-->
               </div>
             </div>
+           
           </div>
         </div>
       </section>
-      <!-- Pricing One End -->
-
-      <!-- Faq One Start -->
+     
       <section class="faq-one">
         <div class="container">
           <div class="section-title text-center">
@@ -1917,7 +1438,7 @@
               >
             </div>
             <h2 class="section-title__title">
-              Questions About our Arch AI? <br />
+              Questions About our Architecture Ai? <br />
               ​​​​​​​We have Answers!
             </h2>
           </div>
@@ -1925,7 +1446,7 @@
             <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
               <div class="accrodion">
                 <div class="accrodion-title">
-                  <h4>What Is Arch AI Generative AI Tool?</h4>
+                  <h4>What Is Architecture Ai Generative AI Tool?</h4>
                 </div>
                 <div class="accrodion-content">
                   <div class="inner">
@@ -1938,7 +1459,6 @@
                       interesting and relevant to your audience
                     </p>
                   </div>
-                  <!-- /.inner -->
                 </div>
               </div>
               <div class="accrodion active">
@@ -1956,7 +1476,6 @@
                       interesting and relevant to your audience
                     </p>
                   </div>
-                  <!-- /.inner -->
                 </div>
               </div>
               <div class="accrodion">
@@ -1976,7 +1495,6 @@
                       interesting and relevant to your audience
                     </p>
                   </div>
-                  <!-- /.inner -->
                 </div>
               </div>
               <div class="accrodion">
@@ -1994,7 +1512,6 @@
                       interesting and relevant to your audience
                     </p>
                   </div>
-                  <!-- /.inner -->
                 </div>
               </div>
               <div class="accrodion">
@@ -2012,7 +1529,6 @@
                       interesting and relevant to your audience
                     </p>
                   </div>
-                  <!-- /.inner -->
                 </div>
               </div>
               <div class="accrodion">
@@ -2030,16 +1546,13 @@
                       interesting and relevant to your audience
                     </p>
                   </div>
-                  <!-- /.inner -->
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Faq One End -->
-
-      <!-- Free Trail Start -->
+    
       <section class="free-trail">
         <div class="container">
           <div class="free-trail__wrap">
@@ -2070,7 +1583,7 @@
                   >
                 </div>
                 <h2 class="section-title__title">
-                  Be part of the future of Arch AI Let’s <br />
+                  Be part of the future of Architecture Ai Let’s <br />
                   Create Something
                 </h2>
               </div>
@@ -2088,9 +1601,7 @@
           </div>
         </div>
       </section>
-      <!-- Free Trail End -->
-
-      <!-- Main Footer Start -->
+     
       <footer class="main-footer">
         <div class="main-footer__shape-1 img-bounce"></div>
         <div class="main-footer__top">
@@ -2202,113 +1713,7 @@
           </div>
         </div>
       </footer>
-      <!-- Main Footer End -->
-
-      <!-- Color Palate / Color Switcher -->
-      <div class="color-palate">
-        <div class="color-trigger">
-          <i class="fas fa-cog fa-fw"></i>
-        </div>
-        <div class="color-palate-inner">
-          <div class="color-palate-head">
-            <h6>Choose Options</h6>
-          </div>
-          <!-- Colors -->
-          <div class="various-color clearfix">
-            <h6>Multiple Colors</h6>
-            <br />
-            <div class="colors-list">
-              <span
-                class="palate default-color active"
-                data-theme-file="css/color-themes/default-color.css"
-              ></span>
-              <span
-                class="palate blue-color"
-                data-theme-file="css/color-themes/blue-color.css"
-              ></span>
-              <span
-                class="palate brown-color"
-                data-theme-file="css/color-themes/brown-color.css"
-              ></span>
-              <span
-                class="palate green-color"
-                data-theme-file="css/color-themes/green-color.css"
-              ></span>
-              <span
-                class="palate orange-color"
-                data-theme-file="css/color-themes/orange-color.css"
-              ></span>
-              <span
-                class="palate purple-color"
-                data-theme-file="css/color-themes/purple-color.css"
-              ></span>
-              <span
-                class="palate teal-color"
-                data-theme-file="css/color-themes/teal-color.css"
-              ></span>
-              <span
-                class="palate yellow-color"
-                data-theme-file="css/color-themes/yellow-color.css"
-              ></span>
-            </div>
-          </div>
-          <h6>RTL Version</h6>
-          <ul class="rtl-version option-box">
-            <li class="rtl">RTL Version</li>
-            <li>LTR Version</li>
-          </ul>
-          <h6>Boxed Version</h6>
-          <ul class="box-version option-box">
-            <li class="box">Boxed</li>
-            <li>Full width</li>
-          </ul>
-          <h6>Want Sticky Header</h6>
-          <ul class="header-version option-box">
-            <li class="box">No</li>
-            <li>Yes</li>
-          </ul>
-          <h6>Dark Verion</h6>
-          <ul class="dark-version option-box">
-            <li class="box">Yes</li>
-            <li>No</li>
-          </ul>
-          <div class="purchase-box">
-            You will find much more options for colors and styling in admin
-            panel. This color picker is used only for demonstation purposes.
-            <a href="#" class="theme-btn btn-style-two">
-              <span class="btn-wrap">
-                <span class="text-one">buy now</span>
-                <span class="text-two">buy now</span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- End Color Palate / Color Switcher -->
-
-      <!-- Search Popup -->
-      <div class="search-popup">
-        <div class="color-layer"></div>
-        <button class="close-search">
-          <span class="far fa-times fa-fw"></span>
-        </button>
-        <form method="post" action="blog.html">
-          <div class="form-group">
-            <input
-              type="search"
-              name="search-field"
-              value=""
-              placeholder="Search Here"
-              required=""
-            />
-            <button type="submit"><i class="far fa-search fa-fw"></i></button>
-          </div>
-        </form>
-      </div>
-      <!-- End Search Popup -->
-    </div>
-    <!-- End PageWrapper -->
-
+   
     <!-- Scroll To Top -->
     <div class="scroll-to-top scroll-to-target" data-target="html">
       <span class="fas fa-arrow-up fa-fw"></span>
