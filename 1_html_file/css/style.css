@@ -113,9 +113,13 @@ Lizar Business HTML Template
 .want-sticky-header .main-header.fixed-header {
 	position: relative !important;
 	display: none;
+	position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
-
+a
 /* Box Layout */
 .box-layout .page-wrapper {
 	max-width: 1390px;

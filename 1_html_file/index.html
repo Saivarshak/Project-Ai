@@ -42,6 +42,11 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
+    <style>
+    #box1, #box2 {
+    scroll-margin-top: 80px; /* Set this to the header height if different */
+    }
+    </style>
   </head>
 
   <body class="body-bg-color">
@@ -53,6 +58,7 @@
       <!-- Cursor -->
       <div class="cursor"></div>
       <div class="cursor-follower"></div>
+    </div>
       <!-- Cursor End -->
 
       <!-- Main Header -->
@@ -123,25 +129,25 @@
               <!-- Outer Box -->
               <div class="outer-box d-flex align-items-right">
                 <ul class="main-header__login-sing-up">
-                 <li> <a href="login.html"style="
-                  background: linear-gradient(90deg, #4f46e5, #3b82f6);
-                  color: white;
-                  padding: 12px 32px;
-                  border: none;
-                  border-radius: 10px;
-                  font-size: 16px;
-                  font-weight: 500;
-                  cursor: pointer;
-                  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4);
-                  transition: all 0.3s ease;
-                  "
-onmousedown="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(59, 130, 246, 0.6)';"
-onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 15px rgba(59, 130, 246, 0.4)';">
-  Generate AI Image
-                 </a>
-
-</li>
-                </ul>
+                 <li>
+                   <a href="login.html"style="
+                        background: linear-gradient(90deg, #4f46e5, #3b82f6);
+                        color: white;
+                        padding: 12px 32px;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4);
+                        transition: all 0.3s ease;
+                        "
+                        onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 15px rgba(59, 130, 246, 0.4)';"
+                        onmousedown="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(59, 130, 246, 0.6)';">
+                        Generate AI Image
+                   </a>
+                  </li>
+                 </ul>
 
                 <!-- Mobile Navigation Toggler -->
                 <div class="mobile-nav-toggler">
@@ -221,7 +227,7 @@ onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 15p
                       <div class="feature-one__icon">
                         <img src="images/icons/ai-content-writing.png" alt="" />
                       </div>
-                      <h5 class="feature-one__title-2">
+                      <h5 class="feature-one__title-2 m-8">
                         <a href="#box1"
                           >AI Content <br/>
                           Writing</a
@@ -234,7 +240,7 @@ onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 15p
                       <div class="feature-one__icon">
                         <img src="images/icons/ai-image.png" alt="" />
                       </div>
-                      <h5 class="feature-one__title-2">
+                      <h5 class="feature-one__title-2 m-8">
                         <a href="#box2"
                           >AI Image <br />
                           Generator</a
@@ -282,16 +288,9 @@ onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 15p
           </div>
         </div>
       </section>
-      <!-- Feature One End -->
-
-      <!-- Solutions One Start -->
-      
-
-      </section>
-      <!-- Solutions One End -->
 
       <!-- Solutions Two Start -->
-      <section class="solutions-two" id="box1">
+     <section class="solutions-two" id="box1">
         <div class="container">
           <div class="section-title text-center">
             <div class="section-title__tagline-box">
@@ -386,103 +385,102 @@ onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 15p
               <div class="col-xl-6 col-lg-6">
   
                 <div class="solutions-two__content-one-right">
-    <div class="solutions-two__content-one-img-box mt-5">
-      <div class="solutions-two__content-one-img">
-        <video autoplay loop muted playsinline width="100%">
-          <source src="videos/architecture-ai.mp4" type="video/mp4" />
+                <div class="solutions-two__content-one-img-box mt-5">
+                <div class="solutions-two__content-one-img">
+                <video autoplay loop muted playsinline width="100%">
+                <source src="videos/architecture-ai.mp4" type="video/mp4" />
+                </video>
+              </div>
+                </div>
+              </div>
+              </div>
 
-        </video>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-</div>
- </div>
       <!-- Solutions Two End -->
-      <div class="solutions-two__content-three wow fadeInUp" data-wow-delay="100ms">
-  <div
-    class="solutions-two__content-three-shape-1" id="box2"
-    style="background-image: url(images/shapes/solutions-two-content-three-shape-1.png);" ></div>
-  <div class="row" id="box2">
-    <div class="col-xl-6" id="box2">
-    <div class="solutions-two__content-one-right">
-    <div class="solutions-two__content-one-img-box m-5">
-      <div class="solutions-two__content-one-img">
-        <video autoplay loop muted playsinline width="100%">
-          <source src="videos/architecture-ai.mp4" type="video/mp4" />
+      <div class="solutions-twocontent-three wow fadeInUp" id="box2" data-wow-delay="100ms">
 
-        </video>
-      </div>
-    </div>
-  </div>
-</div>
-    <div class="col-xl-6" >
-      <div class="solutions-two__content-three-right">
-        <div class="solutions-two__content-three-title-box">
-          <p>AI Writing Tools</p>
-          <h3>Generate Outstanding AI Images Just Using Prompt 🌄</h3>
-        </div>
-        <p class="solutions-two__content-three-text-1">
-          <span>Architecture Ai</span> is an artificial art generator that
-          turns your ideas into one-of-a kind artwork and photographs
-          in seconds. Finally, you'll have the perfect image to go
-          with your statement.
-        </p>
-        <div class="solutions-two__content-three-points-box">
-          <ul class="solutions-two__content-three-points list-unstyled">
-            <li>
-              <div class="icon"><span class="icon-check"></span></div>
-              <div class="text"><p>1000+ Styles</p></div>
-            </li>
-            <li>
-              <div class="icon"><span class="icon-check"></span></div>
-              <div class="text"><p>Custom Sizes</p></div>
-            </li>
-            <li>
-              <div class="icon"><span class="icon-check"></span></div>
-              <div class="text"><p>Oil Painting</p></div>
-            </li>
-            <li>
-              <div class="icon"><span class="icon-check"></span></div>
-              <div class="text"><p>+ And Much More</p></div>
-            </li>
-          </ul>
-          <ul class="solutions-two__content-three-points solutions-two__content-three-points-2 list-unstyled">
-            <li>
-              <div class="icon"><span class="icon-check"></span></div>
-              <div class="text"><p>Photo-realistic scenes</p></div>
-            </li>
-            <li>
-              <div class="icon"><span class="icon-check"></span></div>
-              <div class="text"><p>Graphics</p></div>
-            </li>
-            <li>
-              <div class="icon"><span class="icon-check"></span></div>
-              <div class="text"><p>Isometric Vector Graphics</p></div>
-            </li>
-          </ul>
-        </div>
-        <div class="solutions-two__content-three-btn-box">
-          <a href="about.html" class="thm-btn solutions-two__content-three-btn" style=" display: inline-block;
-              margin-top: 10px;
-              padding: 10px 20px;
-              text-decoration: none;
-              background-color: #007bff;
-              color: white;
-              border-radius: 6px;
-              font-weight: 500;
-              transition: background-color 0.3s, box-shadow 0.3s;
-              box-shadow: 0 8px 10px rgba(0, 0, 0, 0.55);">
-            Generate AI Image
-          </a>
+       <div
+      class="solutions-two__content-three-shape-1"
+      style="background-image: url(images/shapes/solutions-two-content-three-shape-1.png);" ></div>
+  
+      <div class="row">
+      <div class="col-xl-6" >
+        <div class="solutions-two__content-one-right">
+      <div class="solutions-two__content-one-img-box m-5">
+        <div class="solutions-two__content-one-img">
+          <video autoplay loop muted playsinline width="100%">
+            <source src="videos/architecture-ai.mp4" type="video/mp4" />
+
+          </video>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-</section>
-     
-
+      </div>
+      </div>
+      <div class="col-xl-6" >
+        <div class="solutions-two__content-three-right">
+          <div class="solutions-two__content-three-title-box">
+            <p>AI Writing Tools</p>
+            <h3>Generate Outstanding AI Images Just Using Prompt 🌄</h3>
+          </div>
+          <p class="solutions-two__content-three-text-1">
+            <span>Architecture Ai</span> is an artificial art generator that
+            turns your ideas into one-of-a kind artwork and photographs
+            in seconds. Finally, you'll have the perfect image to go
+            with your statement.
+          </p>
+          <div class="solutions-two__content-three-points-box">
+            <ul class="solutions-two__content-three-points list-unstyled">
+              <li>
+                <div class="icon"><span class="icon-check"></span></div>
+                <div class="text"><p>1000+ Styles</p></div>
+              </li>
+              <li>
+                <div class="icon"><span class="icon-check"></span></div>
+                <div class="text"><p>Custom Sizes</p></div>
+              </li>
+              <li>
+                <div class="icon"><span class="icon-check"></span></div>
+                <div class="text"><p>Oil Painting</p></div>
+              </li>
+              <li>
+                <div class="icon"><span class="icon-check"></span></div>
+                <div class="text"><p>+ And Much More</p></div>
+              </li>
+            </ul>
+            <ul class="solutions-two__content-three-points solutions-two__content-three-points-2 list-unstyled">
+              <li>
+                <div class="icon"><span class="icon-check"></span></div>
+                <div class="text"><p>Photo-realistic scenes</p></div>
+              </li>
+              <li>
+                <div class="icon"><span class="icon-check"></span></div>
+                <div class="text"><p>Graphics</p></div>
+              </li>
+              <li>
+                <div class="icon"><span class="icon-check"></span></div>
+                <div class="text"><p>Isometric Vector Graphics</p></div>
+              </li>
+            </ul>
+          </div>
+          <div class="solutions-two__content-three-btn-box">
+            <a href="about.html" class="thm-btn solutions-two__content-three-btn" style=" display: inline-block;
+                margin-top: 10px;
+                padding: 10px 20px;
+                text-decoration: none;
+                background-color: #007bff;
+                color: white;
+                border-radius: 6px;
+                font-weight: 500;
+                transition: background-color 0.3s, box-shadow 0.3s;
+                box-shadow: 0 8px 10px rgba(0, 0, 0, 0.55);">
+              Generate AI Image
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
       <section class="pricing-one mt-5">
         <div class="pricing-one__shape-1 zoom-fade-2"></div>
         <div class="pricing-one__shape-2 img-bounce"></div>
@@ -965,8 +963,10 @@ onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 15p
        
       </footer>
        
-    <!-- Scroll To Top -->
-    <div class="scroll-to-top scroll-to-target" data-target="html">
+    
+    
+      <!-- Scroll To Top -->
+      <div class="scroll-to-top scroll-to-target" data-target="html">
       <span class="fas fa-arrow-up fa-fw"></span>
     </div>
 
